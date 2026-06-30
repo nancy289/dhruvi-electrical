@@ -732,4 +732,50 @@ footer p {
 .contact {
     animation: fadeUp .8s ease;
 }
- 
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+padding:70px 8%;
+background:#fff;
+}
+
+.stat-box{
+background:white;
+padding:35px;
+text-align:center;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.stat-box:hover{
+transform:translateY(-10px);
+}
+
+.stat-box h2{
+font-size:40px;
+color:#0F4CFF;
+}
+
+.stat-box p{
+margin-top:10px;
+color:#666;
+}
+
+@media(max-width:768px){
+
+.stats{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:480px){
+
+.stats{
+grid-template-columns:1fr;
+}
+
+}
