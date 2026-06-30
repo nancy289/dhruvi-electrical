@@ -199,25 +199,31 @@ header {
 
 }
 
-.hero h1 {
+.hero h1{
 
-    font-size: 60px;
+font-size:64px;
 
-    font-weight: 800;
+font-weight:800;
 
-    line-height: 1.2;
+line-height:1.15;
 
-    margin-bottom: 20px;
+margin-bottom:25px;
+
+text-shadow:0 6px 20px rgba(0,0,0,.35);
 
 }
 
-.hero p {
+.hero p{
 
-    font-size: 20px;
+font-size:20px;
 
-    margin-bottom: 40px;
+line-height:1.8;
 
-    color: #eee;
+max-width:700px;
+
+margin:auto auto 40px;
+
+color:#f3f3f3;
 
 }
 
@@ -404,10 +410,17 @@ section h2::after {
     box-shadow: 0 25px 60px rgba(0, 0, 0, .12);
 }
 
-.card i {
-    font-size: 55px;
-    color: var(--secondary);
-    margin-bottom: 20px;
+.card img{
+
+    width:100%;
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    margin-bottom:20px;
+
 }
 
 .card h3 {
@@ -792,4 +805,186 @@ color:white;
 width:55px;
 height:55px;
 object-fit:contain;
+}
+/* Contact Call Button */
+
+.contact-call-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:15px 35px;
+    background:#25D366;
+    color:#fff;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    font-size:18px;
+    margin:0 auto 30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.contact-call-btn:hover{
+    transform:translateY(-4px);
+    background:#1ebe5d;
+}
+
+.contact{
+    text-align:center;
+}
+/* ===============================
+   Sticky Navbar
+================================== */
+
+header.sticky{
+
+    background:#ffffff;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    transition:.3s;
+
+}
+/* ===============================
+   Scroll To Top Button
+================================== */
+
+#scrollTopBtn{
+
+    position:fixed;
+    bottom:100px;
+    right:25px;
+
+    width:55px;
+    height:55px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#0F4CFF;
+    color:#fff;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    display:none;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+#scrollTopBtn:hover{
+
+    transform:translateY(-5px);
+
+    background:#FF9F1C;
+
+}
+/* ===============================
+   Active Navigation
+================================== */
+
+.navbar ul li a.active{
+
+    color: var(--secondary);
+
+    font-weight:700;
+
+}
+/* ===============================
+   COUNTER SECTION
+================================== */
+
+.counter{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+
+    background:#111827;
+
+    color:white;
+
+    text-align:center;
+
+    padding:80px 8%;
+
+}
+
+.counter-box{
+
+    background:#1f2937;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    transition:.3s;
+
+}
+
+.counter-box:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.counter-box h2{
+
+    font-size:52px;
+
+    color:#FF9F1C;
+
+}
+
+.counter-box p{
+
+    margin-top:12px;
+
+    color:#ddd;
+
+}
+
+@media(max-width:768px){
+
+.counter{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:480px){
+
+.counter{
+
+grid-template-columns:1fr;
+
+}
+
+}
+.hero-tag{
+
+display:inline-block;
+
+padding:10px 22px;
+
+border-radius:50px;
+
+background:rgba(255,255,255,.12);
+
+border:1px solid rgba(255,255,255,.25);
+
+backdrop-filter:blur(10px);
+
+margin-bottom:25px;
+
+font-weight:600;
+
+color:#FFD54F;
+
 }
