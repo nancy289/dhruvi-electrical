@@ -121,3 +121,101 @@ counters.forEach(counter => {
     updateCounter();
 
 });
+ // ===============================
+// SCROLL REVEAL
+// ===============================
+
+const hiddenElements = document.querySelectorAll(".hidden");
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+});
+
+hiddenElements.forEach(el=>observer.observe(el));
+// ===============================
+// CONTACT FORM -> WHATSAPP
+// ===============================
+
+const form = document.getElementById("contactForm");
+
+if (form) {
+
+    form.addEventListener("submit", function(e){
+
+        e.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const message = document.getElementById("message").value;
+
+        const whatsappMessage =
+`Hello Dhruvi Electrical,
+
+Name: ${name}
+
+Phone: ${phone}
+
+Email: ${email}
+
+Work:
+${message}`;
+
+        const url =
+`https://wa.me/919723149579?text=${encodeURIComponent(whatsappMessage)}`;
+
+        window.open(url,"_blank");
+
+        form.reset();
+
+    });
+
+}
+// ===============================
+// MOBILE MENU
+// ===============================
+
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.querySelector(".navbar ul");
+
+if(menuToggle){
+
+menuToggle.addEventListener("click",()=>{
+
+    navMenu.classList.toggle("active");
+
+});
+
+}
+// ===============================
+// FAQ
+// ===============================
+
+const faq = document.querySelectorAll(".faq-item");
+
+faq.forEach(item=>{
+
+    const btn=item.querySelector(".faq-question");
+
+    btn.addEventListener("click",()=>{
+
+        item.classList.toggle("active");
+
+    });
+
+});
+window.addEventListener("load",()=>{
+
+document.getElementById("loader").style.display="none";
+
+});

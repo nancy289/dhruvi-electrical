@@ -7,7 +7,7 @@
 
     <title>Dhruvi Electrical | Electrical Solutions</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,18 +37,21 @@
 <span>Dhruvi Electrical</span>
 
 </div>
+<div class="menu-toggle" id="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+</div>
 
 <ul>
 
 <li><a href="#">Home</a></li>
 
-<li><a href="#about">About</a></li>
+<li><a href="about.html">About</a></li>
 
-<li><a href="#products">Products</a></li>
+<li><a href="product.html">Products</a></li>
 
-<li><a href="#services">Services</a></li>
+<li><a href="services.htm">Services</a></li>
 
-<li><a href="#contact">Contact</a></li>
+<li><a href="contact.html">Contact</a></li>
 
 </ul>
 
@@ -116,9 +119,10 @@ Call Now
 
 </section>
 
+
 <!-- ================= ABOUT ================= -->
 
-<section class="about" id="about">
+<section class="about hidden" id="about">
 
 <div class="container">
 
@@ -177,7 +181,7 @@ at affordable prices.
 
 <!-- ================= PRODUCTS ================= -->
 
-<section class="products" id="products">
+<section class="products hidden" id="products">
 
 <h2>Our Products</h2>
 
@@ -213,7 +217,7 @@ at affordable prices.
 
 <!-- ================= SERVICES ================= -->
 
-<section class="services" id="services">
+<section class="services hidden" id="services">
 
 <h2>Our Services</h2>
 
@@ -254,26 +258,201 @@ at affordable prices.
 </div>
 
 </section>
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials hidden">
+
+    <h2>What Our Customers Say</h2>
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p>
+                Excellent service and genuine electrical products.
+                The electrician arrived on time and completed the work professionally.
+            </p>
+
+            <div class="customer">
+
+                <img src="https://i.pravatar.cc/100?img=12" alt="Customer">
+
+                <div>
+                    <h4>Rajesh Patel</h4>
+                    <span>Ahmedabad</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p>
+                Best electrical shop in the area.
+                Good pricing and quality products.
+                Highly recommended.
+            </p>
+
+            <div class="customer">
+
+                <img src="https://i.pravatar.cc/100?img=32" alt="Customer">
+
+                <div>
+                    <h4>Neha Shah</h4>
+                    <span>Bopal</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p>
+                Very quick response for home wiring work.
+                Professional team and excellent support.
+            </p>
+
+            <div class="customer">
+
+                <img src="https://i.pravatar.cc/100?img=52" alt="Customer">
+
+                <div>
+                    <h4>Amit Mehta</h4>
+                    <span>South Bopal</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= BRANDS ================= -->
+
+<section class="brands hidden">
+
+    <h2>Trusted Brands We Deal In</h2>
+
+    <div class="brand-grid">
+
+        <div class="brand-card">
+            <img src="images/Havells.png" alt="Havells">
+        </div>
+
+        <div class="brand-card">
+            <img src="images/Anchor.png" alt="Anchor">
+        </div>
+
+        <div class="brand-card">
+            <img src="images/Polycab.png" alt="Polycab">
+        </div>
+
+        <div class="brand-card">
+            <img src="images/rrkabel.png" alt="RR Kabel">
+        </div>
+
+        <div class="brand-card">
+            <img src="images/finolex.png" alt="Finolex">
+        </div>
+
+        <div class="brand-card">
+            <img src="images/schneider.png" alt="Schneider">
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FAQ ================= -->
+
+<section class="faq hidden">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-container">
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Do you provide home electrical services?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>Yes, we provide complete home electrical installation, repair, wiring, fan installation, lighting solutions and maintenance.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Do you provide commercial wiring?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>Yes. We handle offices, shops, apartments, buildings and commercial electrical projects.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Is emergency service available?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>Yes, emergency electrical support is available 24×7.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Which electrical brands do you sell?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>We deal in Havells, Anchor, Polycab, RR Kabel, Finolex, GM, Schneider, Legrand, Goldmedal and many more trusted brands.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<div id="loader">
+    <div class="loader"></div>
+</div>
 
 <!-- ================= CONTACT ================= -->
 
-<section class="contact" id="contact">
+<section class="contact hidden" id="contact">
 
 <h2>Book an Electrician</h2>
 
-<form>
+<form id="contactForm">
 
-<input type="text" placeholder="Your Name" required>
+<input type="text" id="name" placeholder="Your Name" required>
 
-<input type="email" placeholder="Email">
+<input type="email" id="email" placeholder="Email">
 
-<input type="tel" placeholder="Phone Number" required>
+<input type="tel" id="phone" placeholder="Phone Number" required>
 
-<textarea placeholder="Describe your work"></textarea>
+<textarea id="message" placeholder="Describe your work"></textarea>
 
-<button type="submit">
-Book Now
-</button>
+<button type="submit">Book Now</button>
 
 <br><br>
 <a href="tel:+919723149579" class="contact-call-btn">
@@ -284,15 +463,83 @@ Book Now
 
 </section>
 
+<div class="map-container">
+
+    <iframe
+        src="https://www.google.com/maps?q=23.0329564,72.4640367&z=17&output=embed"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+
+</div>
+
 <!-- ================= FOOTER ================= -->
 
-<footer>
+<footer class="footer">
 
-<p>
+    <div class="footer-container">
 
-© 2026 Dhruvi Electrical | All Rights Reserved
+        <div class="footer-box">
 
-</p>
+            <h3>⚡ Dhruvi Electrical</h3>
+
+            <p>
+                Your trusted electrical shop in Bopal, Ahmedabad.
+                We provide quality electrical products and professional
+                electrician services since 2018.
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Contact</h3>
+
+            <p>
+                📍 Opp. Tejas School,
+                Bopal, Ahmedabad
+            </p>
+
+            <p>
+                📞 +91 97231 49579
+            </p>
+
+            <p>
+                📧 nancyserasiya@gmail.com
+            </p>
+
+            <p>
+                🕙 10:00 AM – 7:00 PM
+            </p>
+
+            <p>
+                🚨 Emergency Service 24×7
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 Dhruvi Electrical | Designed & Developed by Nancy
+
+    </div>
 
 </footer>
 <!-- Scroll To Top Button -->
@@ -300,13 +547,15 @@ Book Now
     <i class="fa-solid fa-arrow-up"></i>
 </button>
 <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/919723149579"
-class="whatsapp-btn"
-target="_blank">
+<!-- ================= WHATSAPP BUTTON ================= -->
 
-<i class="fa-brands fa-whatsapp"></i>
+<a href="https://wa.me/919723149579?text=Hello%20Dhruvi%20Electrical,%20I%20need%20electrical%20service."
+   class="whatsapp-btn"
+   target="_blank">
 
-</a> 
-<script src="script.js"></script>
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+<script src="js/script.js"></script>
 </body>
 </html>
